@@ -589,3 +589,77 @@ function ranging(){
     }
 }
 
+/*chapter no 21 yo 25 */
+function greet(){
+    var fisrtName=prompt("enter first name")
+    var lastName=prompt("enter last name: ")
+    var fullName=fisrtName+lastName
+    alert("have nice day "+fullName);
+}
+
+function mobile(){
+    var mobileName=prompt("enter your mobile model?")
+    alert("lenght of string "+mobileName.length);
+}
+
+function city1(){
+    var name="hyderabad"
+    var res = name.replace("hyderabad", "islamabad");
+    alert("city name "+name)
+    alert("city name after replacment "+ res)
+
+}
+
+function convert(){
+    var str=prompt("enter a number: ")
+    alert(typeof(str))
+    var newStr=parseInt(str);
+    alert(newStr+""+ typeof(newStr));
+}
+
+function pass1(){
+    var str=prompt("enter your pass ")
+    if (str[0]==0 || str[0]==1 || str[0]==2 || str[0]==3 || str[0]==4 || str[0]==5 || str[0]==6 || str[0]==7 || str[0]==8 || str[0]==9){
+        alert("pasword canot begin with number")
+
+    }
+    if (str.length<6){
+        alert("please enter 6 digit long number")
+
+    }
+}
+
+/*chapter no 26 yo 30 */
+
+function round(){
+    var num = parseInt(prompt("enter a number"))
+    alert(Math.round(num))
+}
+
+function random(){
+    var num1=Math.floor(Math.random() * 10);
+    var num=parseInt(prompt("enter number between 0 to 9"));
+    if (num==num1){
+        alert("congrats!")
+    }
+    else if (num!=num1){
+        alert("try again")
+    }
+}
+
+/*chapter no 31 yo 34 */
+
+function time(){
+
+
+    var d = new Date();
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    alert(days[d.getDay()]+" "+d.getDay()+"-"+d.getDate()+"-"+
+    d.getFullYear()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds())
+    
+    
+}
+
+
+
